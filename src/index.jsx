@@ -3,6 +3,7 @@ import './index.css';
 
 import drawr from 'drawr';
 import ServerConfiguration from './ServerConfiguration.jsx';
+import CanvasControl from './CanvasControl.jsx';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -48,4 +49,9 @@ function handleConnectionInput(key, config) {
 ReactDOM.render(
     <ServerConfiguration clientCallback={handleConnectionInput}/>,
     document.getElementById('session')
+);
+
+ReactDOM.render(
+    <CanvasControl canvas={canvas}/>,
+    document.getElementById('styling')
 );

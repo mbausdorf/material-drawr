@@ -14,21 +14,28 @@
 input {
     width: 100%;
     background-color: rgba(31, 38, 42, 0.8);
-    color: white;
+    color: #c0d3db;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.Submit {
+    outline: 1px solid #c0d3db;
 }
 
 .AddressField {
     flex: 3;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .PortField {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+}
+
+.PortField > label > input {
+    text-align: center;
 }
 
 .SessionId {

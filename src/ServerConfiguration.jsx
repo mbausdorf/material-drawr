@@ -2,9 +2,10 @@ import './css/bootstrap.css';
 import './ServerConfiguration.css';
 
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PROP_TYPES = {
-    clientCallback: React.PropTypes.func
+    clientCallback: PropTypes.func
 };
 
 class ServerConfiguration extends React.Component {

@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "prop-types": "^15.5.8",
+    "rc-color-picker": "^1.1.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
