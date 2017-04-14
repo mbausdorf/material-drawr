@@ -10,4 +10,4 @@ node app.js
 fun!
 
 current bugs:
-Window needs to be resized once for the canvas to have correct size. Has height 0 before
+Window needs to be resized once for the canvas to have correct size. Has height 0 before.
