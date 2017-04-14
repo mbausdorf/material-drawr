@@ -34,20 +34,21 @@ class ServerConfiguration extends React.Component {
         let id;
         this.props.clientCallback(key, this.state).then(sessionInfo => {
             id = sessionInfo.id;
-            this.setState({connectedId: id});
+            this.setState({ connectedId: id });
         });
     }
 
     render() {
         return (
             <div className='ServerForm'>
+                <label>Connection settings</label>
                 <div className='Wrapper'>
                     <div className='AddressField'>
-                    <label>
-                        <input
-                            value={this.state.address}
-                            onChange={this.handleChange.bind(this, 'address')} />
-                    </label>
+                        <label>
+                            <input
+                                value={this.state.address}
+                                onChange={this.handleChange.bind(this, 'address')} />
+                        </label>
                     </div>
                     <div className='PortField'>
                         <label>
@@ -72,11 +73,11 @@ class ServerConfiguration extends React.Component {
                 <div className='Wrapper'>
                     <div className='Submit'>
                         <input type='submit' value='Join'
-                            onClick={this.handleSubmit.bind(this, 'join')}/>
+                            onClick={this.handleSubmit.bind(this, 'join')} />
                     </div>
                     <div className='Submit'>
                         <input type='submit' value='New'
-                            onClick={this.handleSubmit.bind(this, 'new')}/>
+                            onClick={this.handleSubmit.bind(this, 'new')} />
                     </div>
                 </div>
                 <div>{this.state.connectedId}</div>
