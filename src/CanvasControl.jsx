@@ -53,7 +53,7 @@ class CanvasControl extends React.Component {
                 />
                 <br />
                 <label>Stroke-width</label>
-                <Slider defaultValue={24} min={8} max={64} step={4} dots={true} onChange={this.onStyleChange.bind(this)} />
+                <Slider defaultValue={8} min={8} max={64} step={4} dots={true} onChange={this.onStyleChange.bind(this)} />
                 <br />
                 <label>Eraser</label>
                 <Checkbox onChange={this.onStyleChange.bind(this)} />
