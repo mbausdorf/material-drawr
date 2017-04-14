@@ -21,29 +21,22 @@
 </head>
 
 <body>
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-            <div class="mdl-layout__header-row">
-                <span class="mdl-layout-title">Drawr</span>
-            </div>
-        </header>
+    <div class="demo-layout mdl-layout mdl-js-layout <mdl-layout--fixed-drawer></mdl-layout--fixed-drawer>">
         <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-
-            </header>
-            <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+            <span class="mdl-layout-title">Drawr</span>
+            <nav class="mdl-navigation">
                 <!-- Connection Info -->
                 <div id="styling"></div>
                 <!-- Colour picker -->
                 <div id="session"></div>
             </nav>
         </div>
-        <main class="mdl-layout__content mdl-color--grey-100" id="panes-layout">
+        <main class="mdl-layout__content" id="panes-layout">
             <div id="canvas"></div>
         </main>
     </div>
+
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-
     <script type="text/javascript" src="./dist/index.js"></script>
 </body>
 
