@@ -48,12 +48,12 @@ class CanvasControl extends React.Component {
                 <label>Colour</label>
                 <ColorPickerPanel
                     mode='RGB'
-                    color={'#36c'}
+                    defaultColor={'#000'}
                     onChange={this.onColorChange.bind(this)}
                 />
                 <br />
                 <label>Stroke-width</label>
-                <Slider onChange={this.onStyleChange.bind(this)} />
+                <Slider defaultValue={24} min={8} max={64} step={4} dots={true} onChange={this.onStyleChange.bind(this)} />
                 <br />
                 <label>Eraser</label>
                 <Checkbox onChange={this.onStyleChange.bind(this)} />
