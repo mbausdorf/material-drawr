@@ -6,8 +6,7 @@ module.exports = {
         filename: 'dist/index.js'
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: [/\.jsx$/],
                 exclude: /node_modules/,
                 loader: 'babel-loader',
@@ -37,7 +36,7 @@ module.exports = {
                 loader: 'url-loader?limit=10000&name=dist/fonts/[name].[ext]&mimetype=image/svg+xml'
             }
         ]
-    }//,
+    } //,
     // plugins: [
     //     new webpack.optimize.UglifyJsPlugin()
     // ]
